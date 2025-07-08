@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Jerusalem-Charlemagne - Profile</title>
 </head>
 <body>
@@ -10,46 +11,108 @@
         <h1>Charlemagne B. Jerusalem</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#home">Home </a></li>
+                <li><a href="#contact">Contact Me </a></li>
+                <li><a href="#feedback">Feedback </a></li>
             </ul>
         </nav>
     </header>
     
     <section id="home">
         <h2>About Me</h2>
-        <p>Hi! Welcome to My Website Portfolio</p>
-        <p>Im' Charlemagne Jerusalem, cybersecurity enthusiast with hands-on experience from CTFs (Capture The Flag) Competitions and training platforms.</p>
-        <p>With strong foundation in Web App Testing, OSINT, and Cybersecurity.</p>
-        <p>Passionate about <strong>Ethical Hacking</strong> and <strong>Bug Bounty</strong> and eager to apply my technical skills in real-world environment.</p>
-        <p>Currently learning Full Stack Web App Developing to enhance my knowledge about Web Apps.</p>
+        <img src="images/profile.jpg" alt="Profile Image" class="pfp">
+        <h3 style="text-align: center;">Hi! Welcome to My Website Portfolio</h3>
+        <p>I'm Charlemagne Jerusalem, cybersecurity enthusiast with hands-on experience from CTFs (Capture The Flag) Competitions and training platforms such as <strong>TryHackMe</strong> and <strong>HackTheBox</strong>. With strong foundation in Web App Testing, OSINT, and Cybersecurity.</p>
+        <p>Passionate about <strong>Ethical Hacking</strong> and <strong>Bug Bounty</strong> and eager to apply my technical skills in real-world environment. Currently learning Full Stack Web App Developing to enhance my knowledge about Web Apps.</p>
+        <br>
 
         <h3>Skills</h3>
         <ul>
             <li>Practical experience with Kali Linux and WSL2</li>
             <li>Experience with web proxies such as Burp Suite and OWASP ZAP</li>
             <li>Knowledge about networking and GRC/CIA triad</li>
-            <li></li>
+            <li>Web Developing Languages such HTML, CSS, JavaScript</li>
         </ul>
+        <br>
 
         <h3>Socials</h3>
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">LinkedIn (temporarily restricted)</a>
-        <a href="">TryHackMe</a>
-        <a href="">HackTheBox</a>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/charlemagne.b.jerusalem" target="_blank" rel="noopener noreferrer">
+                <img src="images/fb.png" alt="Facebook" class="icon">
+            </a>
+            <a href="https://x.com/yoCarlo_Magno" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitterx.png" alt="Twitter" class="icon">
+            </a>
+            <a href="https://linkedin.com/in/charlemagne-jerusalem" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://tryhackme.com/p/Carlomagno" target="_blank" rel="noopener noreferrer">
+                <img src="images/tryhackme.png" alt="TryHackMe" class="icon">
+            </a>
+            <a href="https://app.hackthebox.com/users/2135805" target="_blank" rel="noopener noreferrer">
+                <img src="images/htb.png" alt="HackTheBox" class="icon">
+            </a>
+            </div>
     </section>
 
-    <section id="section">
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form action="">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label for="fullname">Full Name: </label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your Name" required maxlength="30">
+            
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
 
+                <label for="subject">Subject: </label>
+                <input type="text" id="subject" name="subject" placeholder="Your Subject" required maxlength="100">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="What would you like to say?" required></textarea>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </section>
 
     <section id="feedback">
+        <h2>Feedback</h2>
+        <form action="">
+            <fieldset>
+                <legend>Feedback Form</legend>
 
+                <label>Rate My Website!</label>
+                <div class="ratings">
+                    <label><input type="radio" name="rating" value="1" required>1</label>
+                    <label><input type="radio" name="rating" value="2">2</label>
+                    <label><input type="radio" name="rating" value="3">3</label>
+                    <label><input type="radio" name="rating" value="4">4</label>
+                    <label><input type="radio" name="rating" value="5">5</label>
+                </div>
+
+                <label for="type">Type of Feedback</label>
+                <select id="type" name="type" required>
+                    <option value="">Choose</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="praise">Praise</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here!" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    I agree to the terms and conditions.
+                </label>
+            </fieldset>
+        </form>
     </section>
 
     <footer>
+        <p>&copy; 2025 Jerusalem Charlemagne. All rights reserved.</p>
         <a href="#top">Go Back To Top</a>
     </footer>
 </body>
